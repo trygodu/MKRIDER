@@ -14,6 +14,12 @@ export const tours: Tour[] = [
     groupSizeMax: 8,
     tone: "rust",
     tagline: "318 curves in 11 miles, then 469 more miles of ridgeline.",
+    photo: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/Blue_Ridge_Mountain_Parkway.jpg",
+      alt: "The Blue Ridge Parkway winding through the Appalachian Mountains",
+      source: "Wikimedia Commons",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Blue_Ridge_Mountain_Parkway.jpg",
+    },
     description:
       "Five days carving the most famous stretch of asphalt in America and the parkway that connects it to everything else worth riding in Appalachia. Mornings on switchbacks, afternoons on ridge-top straights with views for fifty miles, nights in mountain towns that know how to feed a rider.",
     highlights: [
@@ -155,6 +161,12 @@ export const tours: Tour[] = [
     groupSizeMax: 8,
     tone: "blood",
     tagline: "The road that made Top Gear stop the car and start the applause.",
+    photo: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/ROM_Cartisoara_Transfagarasan_08.jpg",
+      alt: "The Transfăgărășan road climbing through hairpin curves in the Carpathian Mountains",
+      source: "Wikimedia Commons",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:ROM_Cartisoara_Transfagarasan_08.jpg",
+    },
     description:
       "A week through Transylvania's fortress towns and into the Carpathians, climaxing on the Transfăgărășan's hairpins above the clouds. We add the quieter Transalpina for a second alpine crossing and a night near Bran to keep things honest.",
     highlights: [
@@ -313,6 +325,12 @@ export const tours: Tour[] = [
     groupSizeMax: 6,
     tone: "ember",
     tagline: "48 hairpins to the roof of the Eastern Alps, twice.",
+    photo: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/Stelvio_Pass_Bolzano_side_2.jpg",
+      alt: "The numbered hairpin switchbacks of the Stelvio Pass",
+      source: "Wikimedia Commons",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Stelvio_Pass_Bolzano_side_2.jpg",
+    },
     description:
       "Our most technical route: the Stelvio's 48 numbered hairpins, the Dolomites' Sella Ronda, and the Passo Giau, strung together with espresso stops and rifugio lunches. Kept to a small group of six because this road doesn't forgive a crowd.",
     highlights: [
@@ -471,6 +489,12 @@ export const tours: Tour[] = [
     groupSizeMax: 10,
     tone: "slate",
     tagline: "The Mother Road, start to finish, no interstate shortcuts.",
+    photo: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/Cadillac_Ranch.jpg",
+      alt: "Cadillac Ranch, the classic cars half-buried nose-down along Route 66",
+      source: "Wikimedia Commons",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Cadillac_Ranch.jpg",
+    },
     description:
       "Twelve days from Chicago to the Santa Monica pier on the original Route 66 alignment wherever it survives. Diners, ghost towns, the Cadillac Ranch, and enough desert horizon to reset a year of city living.",
     highlights: [
@@ -612,6 +636,12 @@ export const tours: Tour[] = [
     groupSizeMax: 6,
     tone: "rust",
     tagline: "Ride to the top of Europe under a sun that never sets.",
+    photo: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/Reine_Lofoten.jpg",
+      alt: "The fishing village of Reine in the Lofoten Islands, Norway",
+      source: "Wikimedia Commons",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Reine_Lofoten.jpg",
+    },
     description:
       "Fjords, fishing villages built on stilts, and a final run to the North Cape under 24-hour daylight. This one is about scenery more than curves, small groups, and a genuine sense of having ridden somewhere few people go.",
     highlights: [
@@ -732,6 +762,12 @@ export const tours: Tour[] = [
     groupSizeMax: 10,
     tone: "ember",
     tagline: "Karst peaks, terrace farms, and the Mã Pí Lèng Pass.",
+    photo: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/MaPiLeng,HaGiang,Vietnam.jpg",
+      alt: "The valley and karst mountains at Mã Pí Lèng Pass, Hà Giang, Vietnam",
+      source: "Wikimedia Commons",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:MaPiLeng,HaGiang,Vietnam.jpg",
+    },
     description:
       "Slower speeds, bigger views. Six days looping through limestone karst country on the northern border, staying in homestays with H'mong and Tày families, with the Mã Pí Lèng Pass as the scenic high point.",
     highlights: [
@@ -853,6 +889,12 @@ export const tours: Tour[] = [
     groupSizeMax: 8,
     tone: "blood",
     tagline: "From Marrakech's medina to the edge of the Sahara.",
+    photo: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/Ait_Ben_Haddou_3.jpg",
+      alt: "The fortified kasbah village of Aït Benhaddou, Morocco",
+      source: "Wikimedia Commons",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Ait_Ben_Haddou_3.jpg",
+    },
     description:
       "High mountain passes, kasbahs, and a night under Sahara stars. We cross the Tizi n'Tichka pass, wind through the Dades Gorge, and finish with a camel-adjacent desert camp before returning through the Ourika Valley.",
     highlights: [
@@ -1000,6 +1042,12 @@ export const tours: Tour[] = [
     groupSizeMax: 10,
     tone: "slate",
     tagline: "Big Sur cliffs on one side, open ocean on the other.",
+    photo: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/Bixby_Creek_Bridge.jpg",
+      alt: "Bixby Creek Bridge arching over the coastline at Big Sur, California",
+      source: "Wikimedia Commons",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Bixby_Creek_Bridge.jpg",
+    },
     description:
       "A relaxed six days from San Francisco to San Diego on Highway 1, with Big Sur's cliffside curves as the centerpiece. Easy pace, big coastline, good for riders who want scenery over technical roads.",
     highlights: [
@@ -1123,6 +1171,12 @@ export const tours: Tour[] = [
     groupSizeMax: 10,
     tone: "rust",
     tagline: "Nine days, two countries, and every kind of road in between.",
+    photo: {
+      src: "https://commons.wikimedia.org/wiki/Special:FilePath/Puente_Nuevo,_Ronda.jpg",
+      alt: "The Puente Nuevo bridge spanning El Tajo gorge in Ronda, Spain",
+      source: "Wikimedia Commons",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Puente_Nuevo,_Ronda.jpg",
+    },
     description:
       "Our flagship road book: a full loop from Madrid through walled medieval cities, over three mountain ranges, along the Atlantic to Lisbon, and back through Andalusia's white villages and olive seas. This is the tour with the most complete route notes we run — turn-by-turn, kilometer-by-kilometer, the same road book format our guides have refined for over 40 years on these roads.",
     highlights: [

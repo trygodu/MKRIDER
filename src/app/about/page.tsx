@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
-import RouteArt from "@/components/RouteArt";
+import SlotImage from "@/components/SlotImage";
+import { RIDER_PHOTOS } from "@/data/riderPhotos";
 
 export const metadata: Metadata = {
   title: "About — The MK Rider Lifestyle",
@@ -84,7 +85,7 @@ export default function AboutPage() {
               site.
             </p>
           </div>
-          <RouteArt tone="ember" className="aspect-[4/3] w-full rounded-md" />
+          <SlotImage photo={RIDER_PHOTOS.roadWithCars} tone="ember" className="aspect-[4/3] w-full rounded-md" />
         </Container>
       </section>
 

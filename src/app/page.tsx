@@ -3,9 +3,10 @@ import Button from "@/components/ui/Button";
 import SectionHeading from "@/components/ui/SectionHeading";
 import TourCard from "@/components/TourCard";
 import ProductCard from "@/components/ProductCard";
-import RouteArt from "@/components/RouteArt";
+import SlotImage from "@/components/SlotImage";
 import { tours } from "@/data/tours";
 import { products } from "@/data/merch";
+import { RIDER_PHOTOS } from "@/data/riderPhotos";
 
 const MARQUEE_ITEMS = [
   "Tail of the Dragon",
@@ -145,7 +146,12 @@ export default function Home() {
       {/* Guide teaser */}
       <section className="py-24">
         <Container className="grid items-center gap-12 lg:grid-cols-2">
-          <RouteArt tone="blood" className="aspect-[4/3] w-full rounded-md" label="MK Rider" />
+          <SlotImage
+            photo={RIDER_PHOTOS.rearViewSky}
+            tone="blood"
+            className="aspect-[4/3] w-full rounded-md"
+            label="MK Rider"
+          />
           <div>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-rust-400">
               Your Guide

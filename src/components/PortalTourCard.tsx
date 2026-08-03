@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Tour } from "@/data/types";
-import RouteArt from "./RouteArt";
+import SlotImage from "./SlotImage";
 import Badge from "./ui/Badge";
 
 export default function PortalTourCard({ tour }: { tour: Tour }) {
@@ -9,7 +9,7 @@ export default function PortalTourCard({ tour }: { tour: Tour }) {
       href={`/portal/${tour.slug}`}
       className="group flex flex-col overflow-hidden rounded-md border border-asphalt-700 bg-asphalt-900 transition-colors hover:border-rust-500/60"
     >
-      <RouteArt tone={tour.tone} className="h-40 w-full" label={tour.country} />
+      <SlotImage photo={tour.photo} tone={tour.tone} className="h-40 w-full" label={tour.country} />
       <div className="flex flex-1 flex-col gap-3 p-6">
         <div className="flex flex-wrap items-center gap-2">
           <Badge tone="rust">{tour.difficulty}</Badge>

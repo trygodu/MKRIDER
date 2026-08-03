@@ -1,5 +1,16 @@
 export type Tone = "rust" | "blood" | "ember" | "slate";
 
+// A real photo used in place of the generated RouteArt placeholder.
+// `source`/`sourceUrl` back the /credits page — Wikimedia Commons images
+// are credited there per their CC license; Pexels images don't legally
+// require it but are listed anyway for transparency and easy swapping.
+export type Photo = {
+  src: string;
+  alt: string;
+  source: "Wikimedia Commons" | "Pexels";
+  sourceUrl: string;
+};
+
 export type Difficulty = "Easy" | "Moderate" | "Challenging" | "Expert";
 
 export type ItineraryStop = {
@@ -57,6 +68,9 @@ export type Tour = {
   // booked. Optional — tours without one fall back to `itinerary` in the
   // Portal view.
   roadbook?: RoadbookDay[];
+  // Real photo of the actual location. Falls back to generated RouteArt
+  // when absent.
+  photo?: Photo;
 };
 
 export type BookingRecord = {
@@ -85,4 +99,8 @@ export type Product = {
   sizes?: string[];
   tone: Tone;
   badge?: string;
+  // Real (generic stock) photo standing in for product photography — these
+  // are fictional products, so this is illustrative, not the actual item.
+  // Falls back to generated RouteArt when absent.
+  photo?: Photo;
 };

@@ -82,10 +82,42 @@ edit tours and products — pages are generated from them automatically via
 `generateStaticParams`. The shared Portal prep-guide content lives in
 `src/data/ridersGuide.ts`.
 
-Visuals use a generated "route line" motif (`src/components/RouteArt.tsx`)
-instead of stock photography, so the whole site reads as one consistent
-brand. Swap in real photography by replacing `RouteArt` usages with
-`next/image`.
+## Photography
+
+Every tour, and a couple of merch items, has a real photo (`photo` field on
+`Tour`/`Product` in `src/data/tours.ts` / `src/data/merch.ts`), rendered by
+`src/components/SlotImage.tsx`:
+
+- **Tour photos** are real photographs of the actual location (e.g. Ronda's
+  Puente Nuevo, the Stelvio Pass hairpins, Cadillac Ranch), hotlinked from
+  Wikimedia Commons and credited on `/credits` per their CC license.
+- **MK Rider brand photography** (home, guide, about) is generic, faceless
+  touring photography from Pexels (`src/data/riderPhotos.ts`) — not photos
+  of MK Rider personally.
+- **Merch photos** are generic stock product photography standing in for
+  items that don't really exist (currently just the jacket and gloves —
+  the rest of the shop still uses the generated placeholder; add a `photo`
+  field to extend it).
+
+Everything else (the other merch categories, and any tour without a
+`photo`) falls back to the generated "route line" gradient art
+(`src/components/RouteArt.tsx`) so the site never shows a broken image.
+`SlotImage` handles this automatically — on missing data *and* on an
+`onError` from a dead link — so it's safe to add a `photo` you're not
+100% sure resolves.
+
+**Known limitation:** these images are hotlinked (not downloaded/rehosted),
+and the environment they were sourced in couldn't reach the public internet
+to verify the URLs actually resolve — they were assembled from real,
+web-search-confirmed Wikimedia Commons file pages and Pexels photo pages
+using each platform's documented direct-link URL convention, but weren't
+visually confirmed loading. Check `/credits` after your first deploy; any
+image that doesn't load will visibly fall back to the gradient art, so
+nothing breaks, but it's worth a look. For production, downloading and
+self-hosting these (or moving to `next/image` with `remotePatterns`
+configured for `commons.wikimedia.org` / `images.pexels.com`) would be a
+good next step — `SlotImage` currently uses a plain `<img>` on purpose to
+avoid needing that config before the URLs are verified.
 
 ## Known gaps / next steps for production
 

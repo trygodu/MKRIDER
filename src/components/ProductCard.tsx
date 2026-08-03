@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Product } from "@/data/types";
-import RouteArt from "./RouteArt";
+import SlotImage from "./SlotImage";
 import Badge from "./ui/Badge";
 import { formatPrice } from "@/lib/format";
 
@@ -11,7 +11,7 @@ export default function ProductCard({ product }: { product: Product }) {
       className="group flex flex-col overflow-hidden rounded-md border border-asphalt-700 bg-asphalt-900 transition-colors hover:border-rust-500/60"
     >
       <div className="relative">
-        <RouteArt tone={product.tone} className="aspect-square w-full" />
+        <SlotImage photo={product.photo} tone={product.tone} className="aspect-square w-full" />
         {product.badge && (
           <span className="absolute left-3 top-3">
             <Badge tone="ember">{product.badge}</Badge>

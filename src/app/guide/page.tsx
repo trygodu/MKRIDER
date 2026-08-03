@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
-import RouteArt from "@/components/RouteArt";
+import SlotImage from "@/components/SlotImage";
+import { RIDER_PHOTOS } from "@/data/riderPhotos";
 
 export const metadata: Metadata = {
   title: "The Guide — Meet MK Rider",
@@ -25,6 +26,17 @@ const TIMELINE = [
   { year: "2019", text: "Founded MK Rider to run small, personally-led tours instead of franchising the name out." },
   { year: "2023", text: "Added the Hà Giang Loop and Atlas Mountains after two seasons of solo recon riding." },
   { year: "Today", text: "Still leading every single group personally — no substitute guides, no exceptions." },
+];
+
+const GALLERY = [
+  RIDER_PHOTOS.rearViewSky,
+  RIDER_PHOTOS.backViewSeated,
+  RIDER_PHOTOS.autumnMountainRoad,
+  RIDER_PHOTOS.parkedOverlook,
+  RIDER_PHOTOS.backViewRider,
+  RIDER_PHOTOS.roadWithCars,
+  RIDER_PHOTOS.adventureLandscape,
+  RIDER_PHOTOS.backViewSeated,
 ];
 
 export default function GuidePage() {
@@ -52,7 +64,12 @@ export default function GuidePage() {
               </Button>
             </div>
           </div>
-          <RouteArt tone="rust" className="aspect-[4/5] w-full rounded-md" label="MK Rider" />
+          <SlotImage
+            photo={RIDER_PHOTOS.adventureLandscape}
+            tone="rust"
+            className="aspect-[4/5] w-full rounded-md"
+            label="MK Rider"
+          />
         </Container>
       </section>
 
@@ -126,11 +143,9 @@ export default function GuidePage() {
         <Container>
           <SectionHeading eyebrow="On the Road" title="From the last few seasons." align="center" />
           <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-            {(["rust", "blood", "ember", "slate", "rust", "blood", "ember", "slate"] as const).map(
-              (tone, i) => (
-                <RouteArt key={i} tone={tone} className="aspect-square w-full rounded-md" />
-              )
-            )}
+            {GALLERY.map((photo, i) => (
+              <SlotImage key={i} photo={photo} tone="rust" className="aspect-square w-full rounded-md" />
+            ))}
           </div>
         </Container>
       </section>

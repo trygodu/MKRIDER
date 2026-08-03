@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import Container from "@/components/ui/Container";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
-import RouteArt from "@/components/RouteArt";
+import SlotImage from "@/components/SlotImage";
 import TourCard from "@/components/TourCard";
 import { getTourBySlug, tours } from "@/data/tours";
 import { formatDate, formatPrice } from "@/lib/format";
@@ -42,7 +42,7 @@ export default async function TourDetailPage({
   return (
     <div>
       <section className="relative border-b border-asphalt-700">
-        <RouteArt tone={tour.tone} className="absolute inset-0 -z-10" />
+        <SlotImage photo={tour.photo} tone={tour.tone} className="absolute inset-0 -z-10" />
         <div className="absolute inset-0 -z-10 bg-asphalt-950/55" />
         <Container className="py-20 sm:py-28">
           <Link href="/travel" className="text-xs font-semibold uppercase tracking-wider text-paper-50/70 hover:text-paper-50">

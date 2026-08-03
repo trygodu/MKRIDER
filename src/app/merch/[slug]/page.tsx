@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Container from "@/components/ui/Container";
 import Badge from "@/components/ui/Badge";
-import RouteArt from "@/components/RouteArt";
+import SlotImage from "@/components/SlotImage";
 import ProductCard from "@/components/ProductCard";
 import ProductActions from "@/components/ProductActions";
 import { getProductBySlug, products } from "@/data/merch";
@@ -45,7 +45,7 @@ export default async function ProductPage({
         </Link>
 
         <div className="mt-8 grid gap-12 lg:grid-cols-2">
-          <RouteArt tone={product.tone} className="aspect-square w-full rounded-md" />
+          <SlotImage photo={product.photo} tone={product.tone} className="aspect-square w-full rounded-md" />
 
           <div>
             <div className="flex flex-wrap items-center gap-2">

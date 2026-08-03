@@ -71,6 +71,9 @@ export default function Footer() {
       <div className="border-t border-asphalt-700">
         <Container className="flex flex-col items-center justify-between gap-3 py-6 text-xs text-paper-200/50 sm:flex-row">
           <p>© {new Date().getFullYear()} MK Rider. All roads reserved.</p>
+          <Link href="/credits" className="hover:text-paper-200">
+            Photo credits
+          </Link>
           <p>Ride hard. Ride together. Ride home.</p>
         </Container>
       </div>

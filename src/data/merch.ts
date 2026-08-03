@@ -12,6 +12,12 @@ export const products: Product[] = [
     sizes: ["XS", "S", "M", "L", "XL", "XXL"],
     tone: "rust",
     badge: "Bestseller",
+    photo: {
+      src: "https://images.pexels.com/photos/6044143/pexels-photo-6044143.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      alt: "Black leather riding jacket laid flat on a white background",
+      source: "Pexels",
+      sourceUrl: "https://www.pexels.com/photo/modern-black-leather-jacket-on-white-background-6044143/",
+    },
   },
   {
     slug: "highway-flannel",
@@ -63,6 +69,12 @@ export const products: Product[] = [
     sizes: ["S", "M", "L", "XL"],
     tone: "slate",
     badge: "Bestseller",
+    photo: {
+      src: "https://images.pexels.com/photos/16253057/pexels-photo-16253057.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      alt: "Leather gloves laid out with riding gear",
+      source: "Pexels",
+      sourceUrl: "https://www.pexels.com/photo/leather-bag-gloves-and-pocket-knife-16253057/",
+    },
   },
   {
     slug: "rally-backpack",
