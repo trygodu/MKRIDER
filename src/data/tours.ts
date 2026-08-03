@@ -38,6 +38,109 @@ export const tours: Tour[] = [
     ],
     bikeOptions: ["Adventure", "Sport-Touring", "Cruiser"],
     startDates: ["2026-09-14", "2026-10-05", "2027-05-10"],
+    roadbook: [
+      {
+        day: 1,
+        title: "Arrival & Bike Handover",
+        totalKm: 0,
+        duration: "—",
+        narrative:
+          "Meet MK Rider in Maryville, Tennessee, gateway to the Smokies. Bike handover, gear check, and a route briefing over a welcome dinner before tomorrow's warm-up ride.",
+        legs: [],
+        pois: [
+          {
+            name: "Maryville, TN",
+            description:
+              "A small foothills town that serves as base camp for the whole trip — close enough to Deals Gap to ride there twice without it feeling like a commute.",
+          },
+        ],
+      },
+      {
+        day: 2,
+        title: "Cherohala Skyway",
+        totalKm: 130,
+        duration: "≈2h30 riding",
+        narrative:
+          "The warm-up day: wide, well-sighted sweepers up to 5,400 feet on the Cherohala Skyway, one of the least-trafficked scenic byways in the Southeast. Overnight in Robbinsville, NC, walking distance from tomorrow's start line.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Hotel, Maryville", time: "—", note: "Departure" },
+          { cumulativeKm: 30, legKm: 30, road: "US-411", place: "Tellico Plains, TN", time: "35'", note: "Gateway to the Skyway" },
+          { cumulativeKm: 85, legKm: 55, road: "NC-143 / TN-165", place: "Santeetlah Gap", time: "1h10'", note: "Cherohala Skyway summit, 5,400 ft" },
+          { cumulativeKm: 130, legKm: 45, road: "US-129", place: "Robbinsville, NC", time: "45'", note: "Overnight, near Deals Gap" },
+        ],
+        pois: [
+          {
+            name: "Cherohala Skyway",
+            description:
+              "A 43-mile National Scenic Byway between two national forests, engineered for sightlines instead of squeezed through an old cart path — the widest-radius curves of the whole trip.",
+          },
+        ],
+      },
+      {
+        day: 3,
+        title: "Tail of the Dragon",
+        totalKm: 110,
+        duration: "≈2h riding (plus repeat runs)",
+        narrative:
+          "The main event: 318 curves in 11 miles on US-129 through Deals Gap. We run it more than once — there's no reason not to — with a stop at the Tree of Shame, the roadside memorial to riders who pushed their luck, before a stop at Fontana Dam.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Robbinsville, NC", time: "—", note: "Departure" },
+          { cumulativeKm: 35, legKm: 35, road: "US-129", place: "Deals Gap", time: "40'", note: "Tail of the Dragon — first run" },
+          { cumulativeKm: 46, legKm: 11, road: "US-129", place: "Deals Gap turnaround", time: "15'", note: "Second run — photo stop at the Tree of Shame" },
+          { cumulativeKm: 75, legKm: 29, road: "US-129 / US-28", place: "Fontana Dam", time: "30'", note: "Dam overlook" },
+          { cumulativeKm: 110, legKm: 35, road: "US-129", place: "Maryville, TN", time: "40'", note: "Return to hotel" },
+        ],
+        pois: [
+          {
+            name: "Deals Gap / Tail of the Dragon",
+            description:
+              "318 curves in 11 miles, no side roads, no driveways — just the most concentrated stretch of corners in the country. A rite of passage for American motorcyclists, and worth every one of the repeat runs.",
+          },
+        ],
+      },
+      {
+        day: 4,
+        title: "Blue Ridge Parkway",
+        totalKm: 250,
+        duration: "≈5h riding",
+        narrative:
+          "Through the Smokies at Newfound Gap and onto the Blue Ridge Parkway — ridge-top cruising with views for fifty miles on a clear day, waterfall stops, and a finish in Asheville for the best barbecue on the route.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Maryville, TN", time: "—", note: "Departure" },
+          { cumulativeKm: 60, legKm: 60, road: "US-441", place: "Newfound Gap", time: "1h10'", note: "Highest point on the parkway crossing" },
+          { cumulativeKm: 95, legKm: 35, road: "US-441", place: "Cherokee, NC", time: "40'", note: "Waterfall stop" },
+          { cumulativeKm: 180, legKm: 85, road: "Blue Ridge Parkway", place: "Waterrock Knob (Mile 431)", time: "1h45'", note: "Ridge-top viewpoints" },
+          { cumulativeKm: 250, legKm: 70, road: "Blue Ridge Parkway / I-40", place: "Asheville, NC", time: "45'", note: "BBQ dinner stop" },
+        ],
+        pois: [
+          {
+            name: "Blue Ridge Parkway",
+            description:
+              "469 miles of ridge-top road connecting the Smokies to Shenandoah, with a strict no-commercial-traffic rule that keeps it free of trucks — just motorcycles, convertibles, and overlooks.",
+          },
+        ],
+      },
+      {
+        day: 5,
+        title: "Fontana Lake & Send-off",
+        totalKm: 130,
+        duration: "≈2h30 riding",
+        narrative:
+          "A relaxed final loop past Fontana Lake before a farewell breakfast and drop-off back in Maryville — one more low-key ridge road to end on rather than a highway slog.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Asheville, NC", time: "—", note: "Departure" },
+          { cumulativeKm: 70, legKm: 70, road: "US-19 / NC-28", place: "Fontana Lake", time: "1h15'", note: "Lake overlook, farewell breakfast stop" },
+          { cumulativeKm: 130, legKm: 60, road: "US-129", place: "Maryville, TN", time: "1h15'", note: "Hotel — journey's end" },
+        ],
+        pois: [
+          {
+            name: "Fontana Lake",
+            description:
+              "A quiet reservoir ringed by national forest, popular with locals and far enough off US-129 that it stays uncrowded even on a busy riding weekend.",
+          },
+        ],
+      },
+    ],
   },
   {
     slug: "transfagarasan",
@@ -79,6 +182,123 @@ export const tours: Tour[] = [
     ],
     bikeOptions: ["Adventure", "Sport-Touring"],
     startDates: ["2026-09-01", "2027-06-14"],
+    roadbook: [
+      {
+        day: 1,
+        title: "Bucharest Arrival",
+        totalKm: 0,
+        duration: "—",
+        narrative:
+          "Gear check and route briefing in Bucharest, followed by a welcome dinner in the old town — Romania's Little Paris, rebuilt in grand Belle Époque style after independence.",
+        legs: [],
+        pois: [
+          { name: "Bucharest", description: "A city of wide boulevards and Belle Époque architecture, with a nightlife-heavy old town that's the natural place for a welcome dinner before the mountains start." },
+        ],
+      },
+      {
+        day: 2,
+        title: "Into Transylvania",
+        totalKm: 170,
+        duration: "≈2h30 riding",
+        narrative:
+          "North through rolling farmland and Carpathian foothills to Brașov, a fortified Saxon town that anchors the whole Transylvania leg of the trip.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Bucharest", time: "—", note: "Departure" },
+          { cumulativeKm: 70, legKm: 70, road: "DN1", place: "Ploiești", time: "50'", note: "Exterior" },
+          { cumulativeKm: 120, legKm: 50, road: "DN1", place: "Sinaia", time: "40'", note: "Carpathian foothills, Peleș Castle glimpse" },
+          { cumulativeKm: 170, legKm: 50, road: "DN1", place: "Brașov", time: "40'", note: "Medieval Saxon old town" },
+        ],
+        pois: [
+          { name: "Brașov", description: "A fortified Saxon town at the foot of the Carpathians, with a walled old town, a leaning bell tower, and one of the best-preserved medieval centers in Romania." },
+        ],
+      },
+      {
+        day: 3,
+        title: "Bran & Peleș",
+        totalKm: 90,
+        duration: "≈2h riding",
+        narrative:
+          "A short warm-up loop into the foothills: Bran Castle, popularly (if inaccurately) linked to the Dracula legend, and Peleș Castle, the ornate Neo-Renaissance summer residence of Romania's kings.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Brașov", time: "—", note: "Departure" },
+          { cumulativeKm: 30, legKm: 30, road: "DN73", place: "Bran", time: "30'", note: "Bran Castle" },
+          { cumulativeKm: 60, legKm: 30, road: "DN73 / DN1", place: "Peleș Castle, Sinaia", time: "45'", note: "Royal castle tour" },
+          { cumulativeKm: 90, legKm: 30, road: "DN1", place: "Brașov", time: "45'", note: "Return to hotel" },
+        ],
+        pois: [
+          { name: "Bran Castle", description: "Perched on a rock outcrop and marketed as \"Dracula's Castle,\" Bran's real history is as a medieval customs post guarding the pass between Transylvania and Wallachia." },
+          { name: "Peleș Castle", description: "A Neo-Renaissance royal residence finished in 1914, with one of the most ornate interiors of any castle in Europe — every room paneled in a different wood." },
+        ],
+      },
+      {
+        day: 4,
+        title: "Transfăgărășan",
+        totalKm: 200,
+        duration: "≈4h30 riding",
+        narrative:
+          "The signature day: over 90 hairpins climbing to Bâlea Lake at 2,034m, built in the 1970s as a military route over the Făgăraș mountains. Anticipate oncoming traffic on the horquilla curves and don't commit to an exit you can't see.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Brașov", time: "—", note: "Departure" },
+          { cumulativeKm: 60, legKm: 60, road: "DN73 / DN7C", place: "Sibiu approach", time: "1h", note: "Foothills" },
+          { cumulativeKm: 120, legKm: 60, road: "DN7C", place: "Bâlea Cascadă", time: "1h30'", note: "Waterfall at the base of the climb" },
+          { cumulativeKm: 145, legKm: 25, road: "DN7C", place: "Bâlea Lake", time: "1h", note: "Glacial lake at the summit, 2,034m" },
+          { cumulativeKm: 200, legKm: 55, road: "DN7C", place: "Curtea de Argeș", time: "1h", note: "Descent complete, Vidraru Dam en route" },
+        ],
+        pois: [
+          { name: "Transfăgărășan", description: "Commissioned by Ceaușescu as a military crossing of the Făgăraș mountains, this is the road Top Gear called the best driving road in the world — over 90 hairpins in one continuous climb." },
+        ],
+      },
+      {
+        day: 5,
+        title: "Transalpina",
+        totalKm: 180,
+        duration: "≈4h riding",
+        narrative:
+          "A second, quieter high-altitude crossing — Romania's highest paved road, through pine forest and open ridgeline with a fraction of the Transfăgărășan's traffic, via a stop at the Vidraru Dam.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Curtea de Argeș", time: "—", note: "Departure" },
+          { cumulativeKm: 50, legKm: 50, road: "DN7C", place: "Vidraru Dam", time: "45'", note: "Dam & lake viewpoint" },
+          { cumulativeKm: 110, legKm: 60, road: "DN67C", place: "Novaci", time: "1h30'", note: "Transalpina base" },
+          { cumulativeKm: 180, legKm: 70, road: "DN67C", place: "Sebeș", time: "1h45'", note: "Romania's highest paved road, 2,145m" },
+        ],
+        pois: [
+          { name: "Vidraru Dam", description: "A 166m arch dam completed in 1966, with a viewing platform over the reservoir and one of the more dramatic engineering stops on the whole trip." },
+          { name: "Transalpina", description: "At 2,145m, the highest paved road in Romania, and far less trafficked than the Transfăgărășan — the reward for riders who want the same alpine scenery without the crowds." },
+        ],
+      },
+      {
+        day: 6,
+        title: "Sibiu & Free Ride",
+        totalKm: 150,
+        duration: "≈3h riding",
+        narrative:
+          "A base day in Sibiu's Saxon citadel, with an optional loop through the villages of Mărginimea Sibiului for riders who aren't ready to slow down.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Sebeș", time: "—", note: "Departure" },
+          { cumulativeKm: 40, legKm: 40, road: "A1", place: "Sibiu", time: "35'", note: "Medieval Saxon citadel" },
+          { cumulativeKm: 150, legKm: 110, road: "Optional loop", place: "Sibiu (return)", time: "2h25'", note: "Free ride through Mărginimea Sibiului villages" },
+        ],
+        pois: [
+          { name: "Sibiu", description: "A former Saxon stronghold with a walled old town, watchful roof-window \"eyes,\" and one of the best-preserved medieval centers in Transylvania." },
+        ],
+      },
+      {
+        day: 7,
+        title: "Return to Bucharest",
+        totalKm: 190,
+        duration: "≈3h30 riding",
+        narrative:
+          "A relaxed ride back to Bucharest on the motorway, with a final group dinner in the old town to close out the loop.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Sibiu", time: "—", note: "Departure" },
+          { cumulativeKm: 90, legKm: 90, road: "DN7 / A1", place: "Pitești", time: "1h30'", note: "Motorway" },
+          { cumulativeKm: 190, legKm: 100, road: "A1", place: "Bucharest", time: "2h", note: "Final group dinner in the old town" },
+        ],
+        pois: [
+          { name: "Bucharest, again", description: "The loop closes where it started — a last dinner to compare notes on which pass, Transfăgărășan or Transalpina, actually won." },
+        ],
+      },
+    ],
   },
   {
     slug: "stelvio-pass",
@@ -121,6 +341,122 @@ export const tours: Tour[] = [
     ],
     bikeOptions: ["Sport", "Adventure"],
     startDates: ["2026-08-24", "2027-07-05"],
+    roadbook: [
+      {
+        day: 1,
+        title: "Milan Arrival",
+        totalKm: 0,
+        duration: "—",
+        narrative:
+          "Bike handover near Lake Como, gear check, and an evening briefing — small group, six riders max, because the Stelvio doesn't forgive a crowd.",
+        legs: [],
+        pois: [{ name: "Lake Como", description: "Alpine lake country on Milan's doorstep, and the natural staging point for a run north into the mountains." }],
+      },
+      {
+        day: 2,
+        title: "Lake Como to Bormio",
+        totalKm: 150,
+        duration: "≈3h riding",
+        narrative:
+          "Along the lake shore and up the Valtellina valley through vineyard terraces to Bormio, the alpine town that sits at the foot of the Stelvio.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Milan / Como", time: "—", note: "Departure" },
+          { cumulativeKm: 50, legKm: 50, road: "SS36", place: "Lecco", time: "45'", note: "Lake Como shoreline" },
+          { cumulativeKm: 110, legKm: 60, road: "SS38", place: "Tirano", time: "1h30'", note: "Valtellina vineyards" },
+          { cumulativeKm: 150, legKm: 40, road: "SS38", place: "Bormio", time: "45'", note: "Base of the Stelvio" },
+        ],
+        pois: [{ name: "Valtellina", description: "A steep-terraced wine valley along the Adda river, producing some of Lombardy's best reds on slopes almost too steep to walk." }],
+      },
+      {
+        day: 3,
+        title: "Stelvio Pass",
+        totalKm: 120,
+        duration: "≈3h riding",
+        narrative:
+          "All 48 numbered hairpins to 2,757m, the second-highest paved pass in the Alps, then a descent into South Tyrol for a rest stop in Merano.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Bormio", time: "—", note: "Departure" },
+          { cumulativeKm: 20, legKm: 20, road: "SS38", place: "Stelvio Pass base", time: "20'", note: "Start of the 48 hairpins" },
+          { cumulativeKm: 48, legKm: 28, road: "SS38", place: "Stelvio Pass summit", time: "1h", note: "2,757m — the roof of the climb" },
+          { cumulativeKm: 90, legKm: 42, road: "SS38 / SS40", place: "Prato allo Stelvio", time: "1h", note: "Descent into South Tyrol" },
+          { cumulativeKm: 120, legKm: 30, road: "SS40", place: "Merano", time: "40'", note: "Rest stop" },
+        ],
+        pois: [{ name: "Stelvio Pass", description: "48 numbered hairpins climbing to 2,757m — one of the most famous driving and riding roads on Earth, and the technical high point of the trip." }],
+      },
+      {
+        day: 4,
+        title: "Into the Dolomites",
+        totalKm: 180,
+        duration: "≈3h30 riding",
+        narrative:
+          "Transfer riding through Bolzano and over the first dolomite pass, Costalunga, to Corvara — base camp for the Sella Ronda.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Merano", time: "—", note: "Departure" },
+          { cumulativeKm: 70, legKm: 70, road: "SS38 / SS241", place: "Bolzano", time: "1h10'", note: "Gateway to the Dolomites" },
+          { cumulativeKm: 130, legKm: 60, road: "SS241", place: "Passo di Costalunga (Karerpass)", time: "1h20'", note: "First dolomite pass" },
+          { cumulativeKm: 180, legKm: 50, road: "SS242", place: "Corvara", time: "1h", note: "Base for the Sella Ronda" },
+        ],
+        pois: [{ name: "Bolzano", description: "A bilingual Italian-German city at the meeting point of three valleys — the practical and cultural gateway to the Dolomites." }],
+      },
+      {
+        day: 5,
+        title: "Sella Ronda",
+        totalKm: 150,
+        duration: "≈3h30 riding",
+        narrative:
+          "The full dolomite loop: Gardena, Sella, Pordoi, and Campolongo passes strung together in one circuit, with jagged limestone peaks on every side the whole way round.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Corvara", time: "—", note: "Departure" },
+          { cumulativeKm: 35, legKm: 35, road: "SS243", place: "Passo Gardena", time: "40'", note: "2,121m" },
+          { cumulativeKm: 70, legKm: 35, road: "SS242", place: "Passo Sella", time: "40'", note: "2,244m" },
+          { cumulativeKm: 100, legKm: 30, road: "SS48", place: "Passo Pordoi", time: "40'", note: "2,239m — highest paved pass in the Dolomites" },
+          { cumulativeKm: 150, legKm: 50, road: "SS48", place: "Passo Campolongo", time: "1h30'", note: "Loop complete back to Corvara" },
+        ],
+        pois: [{ name: "Sella Ronda", description: "A closed circuit of four passes around the Sella massif — the single most famous ride in the Dolomites, and one every rider on this trip does at least once." }],
+      },
+      {
+        day: 6,
+        title: "Passo Giau",
+        totalKm: 130,
+        duration: "≈3h riding",
+        narrative:
+          "One of the most photographed passes in the Alps, with a rifugio lunch at the 2,236m summit, then on to Cortina d'Ampezzo for the night.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Corvara", time: "—", note: "Departure" },
+          { cumulativeKm: 50, legKm: 50, road: "SS48", place: "Passo Falzarego", time: "1h", note: "WWI-history viewpoints" },
+          { cumulativeKm: 80, legKm: 30, road: "SS638", place: "Passo Giau", time: "45'", note: "2,236m — rifugio lunch stop" },
+          { cumulativeKm: 130, legKm: 50, road: "SS51", place: "Cortina d'Ampezzo", time: "1h15'", note: "Alpine resort town" },
+        ],
+        pois: [{ name: "Passo Giau", description: "A single, uninterrupted switchback climb with no straights to break the rhythm — the pass most riders name as their favorite of the whole trip." }],
+      },
+      {
+        day: 7,
+        title: "Free Ride Day",
+        totalKm: 200,
+        duration: "≈4h riding (optional)",
+        narrative:
+          "An open day for bonus passes around Cortina, or a genuine rest day for anyone whose wrists have earned one.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Cortina d'Ampezzo", time: "—", note: "Departure" },
+          { cumulativeKm: 100, legKm: 100, road: "SS51 / SS52", place: "Passo Tre Croci & Misurina", time: "2h", note: "Optional bonus passes" },
+          { cumulativeKm: 200, legKm: 100, road: "SS51", place: "Cortina d'Ampezzo", time: "2h", note: "Return — rest day alternative available" },
+        ],
+        pois: [{ name: "Lago di Misurina", description: "A small alpine lake ringed by pine forest and dolomite peaks, a favorite detour for riders who want one more view before the trip wraps up." }],
+      },
+      {
+        day: 8,
+        title: "Return to Milan",
+        totalKm: 190,
+        duration: "≈3h riding",
+        narrative: "Motorway most of the way back to Milan, with a closing dinner to send the group off.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Cortina d'Ampezzo", time: "—", note: "Departure" },
+          { cumulativeKm: 90, legKm: 90, road: "SS51 / A27", place: "Belluno", time: "1h30'", note: "Motorway" },
+          { cumulativeKm: 190, legKm: 100, road: "A27 / A4", place: "Milan", time: "1h30'", note: "Closing dinner" },
+        ],
+        pois: [{ name: "Milan", description: "The trip's bookend city — a fitting place to trade stories about which of the 48 Stelvio hairpins was the tightest." }],
+      },
+    ],
   },
   {
     slug: "route-66",
@@ -161,6 +497,107 @@ export const tours: Tour[] = [
     ],
     bikeOptions: ["Cruiser", "Touring"],
     startDates: ["2026-10-02", "2027-04-18"],
+    roadbook: [
+      {
+        day: 1,
+        title: "Chicago Send-off",
+        totalKm: 0,
+        duration: "—",
+        narrative:
+          "Bike handover and a ceremonial start at the Route 66 sign on Adams Street — the official beginning of the Mother Road.",
+        legs: [],
+        pois: [{ name: "Chicago", description: "Route 66's eastern terminus, marked by a simple brown sign that's become one of the most photographed starting lines in American road-trip history." }],
+      },
+      {
+        day: 2,
+        title: "Into Missouri",
+        totalKm: 500,
+        duration: "2 days riding",
+        narrative:
+          "Down through Illinois farmland and across the Mississippi into Missouri, with the Gateway Arch as the first must-see stop and a night in Springfield, MO — self-declared \"Birthplace of Route 66.\"",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Chicago, IL", time: "—", note: "Departure" },
+          { cumulativeKm: 300, legKm: 300, road: "I-55 / Route 66", place: "St. Louis, MO", time: "1 day", note: "Gateway Arch stop" },
+          { cumulativeKm: 500, legKm: 200, road: "I-44 / Route 66", place: "Springfield, MO", time: "1 day", note: "Overnight — \"Birthplace of Route 66\"" },
+        ],
+        pois: [{ name: "Gateway Arch, St. Louis", description: "A 630-foot stainless-steel catenary arch on the riverfront, marking the historic gateway to the American West." }],
+      },
+      {
+        day: 4,
+        title: "Oklahoma & Texas Panhandle",
+        totalKm: 950,
+        duration: "2 days riding",
+        narrative:
+          "Tulsa's neon-lit Route 66 murals, an overnight in Oklahoma City, and long, flat, glorious miles into the Texas Panhandle for the Cadillac Ranch.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Springfield, MO", time: "—", note: "Departure" },
+          { cumulativeKm: 250, legKm: 250, road: "I-44", place: "Tulsa, OK", time: "1 day", note: "Route 66 murals & neon signs" },
+          { cumulativeKm: 550, legKm: 300, road: "I-40", place: "Oklahoma City, OK", time: "—", note: "Overnight" },
+          { cumulativeKm: 950, legKm: 400, road: "I-40", place: "Amarillo, TX", time: "1 day", note: "Cadillac Ranch stop" },
+        ],
+        pois: [{ name: "Cadillac Ranch", description: "Ten Cadillacs half-buried nose-down in a Texas field, covered in decades of spray paint — bring your own can, it's expected." }],
+      },
+      {
+        day: 6,
+        title: "New Mexico High Desert",
+        totalKm: 650,
+        duration: "2 days riding",
+        narrative:
+          "Neon motel row in Tucumcari, an optional Santa Fe detour, and Albuquerque's Old Town before the high desert opens up in earnest.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Amarillo, TX", time: "—", note: "Departure" },
+          { cumulativeKm: 300, legKm: 300, road: "I-40", place: "Tucumcari, NM", time: "1 day", note: "Neon motel row" },
+          { cumulativeKm: 450, legKm: 150, road: "I-40 / NM-14", place: "Santa Fe, NM", time: "—", note: "Optional detour, overnight" },
+          { cumulativeKm: 650, legKm: 200, road: "I-40", place: "Albuquerque, NM", time: "1 day", note: "Old Town stop" },
+        ],
+        pois: [{ name: "Tucumcari", description: "One of the best-preserved strips of vintage neon motel signage left on the whole route — a genuine time capsule of 1950s road-trip Americana." }],
+      },
+      {
+        day: 8,
+        title: "Arizona",
+        totalKm: 600,
+        duration: "2 days riding",
+        narrative:
+          "Gallup's trading posts, the Petrified Forest and Painted Desert, and a base in Flagstaff with an optional Grand Canyon side trip.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Albuquerque, NM", time: "—", note: "Departure" },
+          { cumulativeKm: 250, legKm: 250, road: "I-40", place: "Gallup, NM", time: "1 day", note: "Painted Desert approach" },
+          { cumulativeKm: 400, legKm: 150, road: "I-40", place: "Petrified Forest / Painted Desert, AZ", time: "—", note: "National park stop" },
+          { cumulativeKm: 600, legKm: 200, road: "I-40", place: "Flagstaff, AZ", time: "1 day", note: "Grand Canyon side-trip base" },
+        ],
+        pois: [{ name: "Petrified Forest National Park", description: "Fossilized log fields scattered across the Painted Desert's badlands — some of the wildest, most alien-looking scenery on the whole route." }],
+      },
+      {
+        day: 10,
+        title: "Mojave Crossing",
+        totalKm: 700,
+        duration: "2 days riding",
+        narrative:
+          "Kingman's historic downtown, the Colorado River crossing into California, and a desert overnight in Barstow before the final push.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Flagstaff, AZ", time: "—", note: "Departure" },
+          { cumulativeKm: 250, legKm: 250, road: "I-40", place: "Kingman, AZ", time: "1 day", note: "Historic Route 66 downtown" },
+          { cumulativeKm: 450, legKm: 200, road: "I-40", place: "Needles, CA", time: "—", note: "Colorado River crossing" },
+          { cumulativeKm: 700, legKm: 250, road: "I-40 / CA-247", place: "Barstow, CA", time: "1 day", note: "Mojave desert overnight" },
+        ],
+        pois: [{ name: "Mojave Desert", description: "The longest and emptiest stretch of the whole trip — long horizons, real heat, and a reminder of how much of the original Route 66 was built for exactly this kind of open desert crossing." }],
+      },
+      {
+        day: 12,
+        title: "Santa Monica Pier",
+        totalKm: 540,
+        duration: "2 days riding",
+        narrative:
+          "Into the LA basin, an overnight downtown, and the last run down Santa Monica Boulevard to the pier — the End of the Trail sign and a finish-line group photo.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Barstow, CA", time: "—", note: "Departure" },
+          { cumulativeKm: 150, legKm: 150, road: "I-15 / I-215", place: "San Bernardino, CA", time: "1 day", note: "LA basin approach" },
+          { cumulativeKm: 350, legKm: 200, road: "I-10", place: "Downtown LA, CA", time: "—", note: "Overnight" },
+          { cumulativeKm: 540, legKm: 190, road: "I-10 / Santa Monica Blvd", place: "Santa Monica Pier, CA", time: "1 day", note: "End of the Trail — finish-line photo" },
+        ],
+        pois: [{ name: "Santa Monica Pier", description: "The symbolic western end of Route 66, marked by the \"End of the Trail\" sign — 2,448 miles from that first sign in Chicago." }],
+      },
+    ],
   },
   {
     slug: "lofoten-nordkapp",
@@ -201,6 +638,86 @@ export const tours: Tour[] = [
     ],
     bikeOptions: ["Adventure"],
     startDates: ["2027-06-20"],
+    roadbook: [
+      {
+        day: 1,
+        title: "Bodø Arrival",
+        totalKm: 0,
+        duration: "—",
+        narrative: "Gear check in Bodø, then a ferry booked for tomorrow's crossing to the Lofoten Islands.",
+        legs: [],
+        pois: [{ name: "Bodø", description: "A coastal city just above the Arctic Circle, and the ferry gateway to the Lofoten archipelago." }],
+      },
+      {
+        day: 2,
+        title: "Lofoten Islands",
+        totalKm: 300,
+        duration: "2 days riding",
+        narrative:
+          "A ferry crossing followed by two days riding between fishing villages, fjord viewpoints, and the road's literal end at Å i Lofoten.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "Ferry", place: "Bodø", time: "—", note: "Departure" },
+          { cumulativeKm: 80, legKm: 80, road: "Fv815", place: "Svolvær", time: "2h (ferry + ride)", note: "Lofoten gateway" },
+          { cumulativeKm: 180, legKm: 100, road: "E10", place: "Reine", time: "2h", note: "Fishing village, fjord views" },
+          { cumulativeKm: 300, legKm: 120, road: "E10", place: "Å i Lofoten", time: "1h30'", note: "End of the road, turnaround" },
+        ],
+        pois: [{ name: "Lofoten Islands", description: "Jagged granite peaks rising straight out of the sea, with fishing villages built on stilts over the water — among the most photographed scenery in Norway." }],
+      },
+      {
+        day: 4,
+        title: "Back to the Mainland",
+        totalKm: 350,
+        duration: "2 days riding",
+        narrative: "A ferry back to Narvik, then the coastal E6 highway north toward Mo i Rana.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Svolvær", time: "—", note: "Departure" },
+          { cumulativeKm: 100, legKm: 100, road: "Ferry + E10", place: "Narvik", time: "3h", note: "Ferry crossing back to the mainland" },
+          { cumulativeKm: 250, legKm: 150, road: "E6", place: "Fauske", time: "2h", note: "Coastal highway" },
+          { cumulativeKm: 350, legKm: 100, road: "E6", place: "Mo i Rana", time: "1h30'", note: "Overnight" },
+        ],
+        pois: [{ name: "Narvik", description: "A former ore-shipping port with a dramatic WWII history, now a jumping-off point for the ride back onto the mainland's E6." }],
+      },
+      {
+        day: 6,
+        title: "Arctic Circle",
+        totalKm: 300,
+        duration: "2 days riding",
+        narrative: "Crossing the Arctic Circle line at the Polarsirkelsenteret, with the traditional roadside photo, then on toward Alta.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Mo i Rana", time: "—", note: "Departure" },
+          { cumulativeKm: 80, legKm: 80, road: "E6", place: "Arctic Circle Centre", time: "1h", note: "Crossing the line — photo stop" },
+          { cumulativeKm: 200, legKm: 120, road: "E6", place: "Fauske", time: "2h", note: "Coastal fjord road" },
+          { cumulativeKm: 300, legKm: 100, road: "E6", place: "Narvik area", time: "1h30'", note: "Overnight" },
+        ],
+        pois: [{ name: "Arctic Circle Centre", description: "A visitor center marking 66°33′ N, where the midnight sun begins — the psychological halfway point of the trip." }],
+      },
+      {
+        day: 8,
+        title: "Nordkapp",
+        totalKm: 450,
+        duration: "2 days riding",
+        narrative: "The final push north through Alta and across the tundra plateau to the North Cape — timed to arrive under the midnight sun.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Narvik area", time: "—", note: "Departure" },
+          { cumulativeKm: 150, legKm: 150, road: "E6", place: "Alta", time: "2h", note: "Rock carvings detour" },
+          { cumulativeKm: 300, legKm: 150, road: "E69", place: "Skaidi", time: "2h", note: "Tundra plateau" },
+          { cumulativeKm: 450, legKm: 150, road: "E69", place: "Nordkapp (North Cape)", time: "2h", note: "Midnight sun at the top of Europe" },
+        ],
+        pois: [{ name: "Nordkapp", description: "A 307m cliff plunging into the Barents Sea, marketed as mainland Europe's northernmost point — under the midnight sun, the horizon simply never goes dark." }],
+      },
+      {
+        day: 9,
+        title: "Alta Send-off",
+        totalKm: 160,
+        duration: "≈3h riding",
+        narrative: "A relaxed ride back to Alta for a farewell breakfast and drop-off.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Nordkapp", time: "—", note: "Departure" },
+          { cumulativeKm: 160, legKm: 160, road: "E69 / E6", place: "Alta", time: "3h", note: "Farewell breakfast, drop-off" },
+        ],
+        pois: [{ name: "Alta", description: "Home to some of the largest concentrations of prehistoric rock carvings in northern Europe, and a fitting last stop before the group scatters." }],
+      },
+    ],
   },
   {
     slug: "ha-giang-loop",
@@ -241,6 +758,87 @@ export const tours: Tour[] = [
     ],
     bikeOptions: ["Semi-Automatic 150cc-175cc"],
     startDates: ["2026-09-20", "2026-11-08", "2027-02-14"],
+    roadbook: [
+      {
+        day: 1,
+        title: "Hà Giang City",
+        totalKm: 20,
+        duration: "≈40' riding",
+        narrative: "Bike handover — semi-automatic 150-175cc, the standard for this terrain — and a short shakedown ride to Km0 before the loop starts for real tomorrow.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Hà Giang City", time: "—", note: "Departure" },
+          { cumulativeKm: 10, legKm: 10, road: "QL2", place: "Km0 marker", time: "20'", note: "Shakedown ride" },
+          { cumulativeKm: 20, legKm: 10, road: "QL2", place: "Hà Giang City", time: "20'", note: "Return to hotel" },
+        ],
+        pois: [{ name: "Hà Giang City", description: "The staging town for the loop, and the Km0 marker every rider photographs before heading into the karst highlands." }],
+      },
+      {
+        day: 2,
+        title: "Quản Bạ to Yên Minh",
+        totalKm: 80,
+        duration: "≈3h riding",
+        narrative: "Heaven's Gate viewpoint over the Quản Bạ valley, then rolling limestone hills into Yên Minh's pine forest.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Hà Giang City", time: "—", note: "Departure" },
+          { cumulativeKm: 43, legKm: 43, road: "QL4C", place: "Quản Bạ (Heaven's Gate)", time: "1h30'", note: "Twin mountains viewpoint" },
+          { cumulativeKm: 60, legKm: 17, road: "QL4C", place: "Tam Sơn", time: "30'", note: "Valley floor town" },
+          { cumulativeKm: 80, legKm: 20, road: "QL4C", place: "Yên Minh", time: "1h", note: "Pine forest approach, overnight" },
+        ],
+        pois: [{ name: "Heaven's Gate, Quản Bạ", description: "A mountain pass overlook with a view straight down into the valley below and the twin peaks locally known as the \"Fairy Bosom\" mountains." }],
+      },
+      {
+        day: 3,
+        title: "Đồng Văn Plateau",
+        totalKm: 50,
+        duration: "≈2h15' riding",
+        narrative: "A detour through Sủng Là's flower-filled valley before the karst plateau opens up around Đồng Văn's old quarter market town.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Yên Minh", time: "—", note: "Departure" },
+          { cumulativeKm: 25, legKm: 25, road: "QL4C", place: "Sủng Là (H'mong King's Palace)", time: "1h", note: "Valley of flowers detour" },
+          { cumulativeKm: 50, legKm: 25, road: "QL4C", place: "Đồng Văn", time: "1h15'", note: "Old quarter, karst plateau market town" },
+        ],
+        pois: [{ name: "Đồng Văn Karst Plateau", description: "A UNESCO Global Geopark of jagged limestone peaks and terraced farms, with an old quarter market town that fills with H'mong and Tày traders on market days." }],
+      },
+      {
+        day: 4,
+        title: "Mã Pí Lèng Pass",
+        totalKm: 60,
+        duration: "≈2h riding",
+        narrative: "The signature pass above the Nho Quế River — locally called the \"King of Passes\" — with an optional boat ride on the gorge below before an overnight homestay in Mèo Vạc.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Đồng Văn", time: "—", note: "Departure" },
+          { cumulativeKm: 22, legKm: 22, road: "QL4C", place: "Mã Pí Lèng Pass viewpoint", time: "45'", note: "Above the Nho Quế River — \"King of Passes\"" },
+          { cumulativeKm: 40, legKm: 18, road: "QL4C", place: "Mèo Vạc", time: "45'", note: "Boat-ride option on the river" },
+          { cumulativeKm: 60, legKm: 20, road: "QL4C", place: "Mèo Vạc overnight", time: "30'", note: "Homestay" },
+        ],
+        pois: [{ name: "Mã Pí Lèng Pass", description: "A narrow shelf road cut into the cliff face above the Nho Quế River gorge — the single most photographed stretch of road in northern Vietnam." }],
+      },
+      {
+        day: 5,
+        title: "Back through Du Già",
+        totalKm: 90,
+        duration: "≈3h riding",
+        narrative: "Quieter back roads through terrace-farm country on the way back toward Yên Minh, with far less traffic than the outbound route.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Mèo Vạc", time: "—", note: "Departure" },
+          { cumulativeKm: 45, legKm: 45, road: "DT217", place: "Du Già", time: "1h30'", note: "Terrace-farm backroads" },
+          { cumulativeKm: 90, legKm: 45, road: "DT217", place: "Yên Minh (loop)", time: "1h30'", note: "Quieter return route" },
+        ],
+        pois: [{ name: "Du Già", description: "A remote valley of rice terraces and small Tày villages, rarely visited by tour groups that stick to the main loop road." }],
+      },
+      {
+        day: 6,
+        title: "Hà Giang Send-off",
+        totalKm: 50,
+        duration: "≈1h30' riding",
+        narrative: "A final ride back into Hà Giang City for breakfast and drop-off.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Yên Minh", time: "—", note: "Departure" },
+          { cumulativeKm: 50, legKm: 50, road: "QL4C", place: "Hà Giang City", time: "1h30'", note: "Final breakfast, drop-off" },
+        ],
+        pois: [{ name: "Hà Giang City", description: "The loop closes where it started, with plenty to compare notes on — the Mã Pí Lèng photos alone are usually worth the whole trip." }],
+      },
+    ],
   },
   {
     slug: "atlas-mountains",
@@ -283,6 +881,111 @@ export const tours: Tour[] = [
     ],
     bikeOptions: ["Adventure", "Dual-Sport"],
     startDates: ["2026-10-17", "2027-03-06"],
+    roadbook: [
+      {
+        day: 1,
+        title: "Marrakech Arrival",
+        totalKm: 0,
+        duration: "—",
+        narrative: "Bike handover, a walk through the medina, and a welcome dinner before tomorrow's climb into the High Atlas.",
+        legs: [],
+        pois: [{ name: "Marrakech", description: "The Red City's medina is a maze of souks, riads, and the Jemaa el-Fnaa square, which turns into an open-air food market every night at dusk." }],
+      },
+      {
+        day: 2,
+        title: "Tizi n'Tichka Pass",
+        totalKm: 200,
+        duration: "≈4h riding",
+        narrative: "The main High Atlas crossing, climbing to 2,260m at Tizi n'Tichka — Morocco's highest paved mountain pass — before dropping into kasbah country near Ouarzazate.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Marrakech", time: "—", note: "Departure" },
+          { cumulativeKm: 100, legKm: 100, road: "N9", place: "Tizi n'Tichka summit", time: "2h", note: "2,260m, highest road pass in Morocco" },
+          { cumulativeKm: 150, legKm: 50, road: "N9", place: "Aït Benhaddou turnoff", time: "1h", note: "Kasbah country begins" },
+          { cumulativeKm: 200, legKm: 50, road: "N9 / N10", place: "Ouarzazate", time: "1h", note: "\"Hollywood of Morocco\" film studios" },
+        ],
+        pois: [{ name: "Tizi n'Tichka", description: "At 2,260m, Morocco's highest paved mountain pass, lined with roadside mineral sellers and switchback views over the High Atlas." }],
+      },
+      {
+        day: 3,
+        title: "Kasbah Country",
+        totalKm: 90,
+        duration: "≈2h20' riding",
+        narrative: "A short ride to Aït Benhaddou, the UNESCO-listed fortified village used as a filming location for everything from Gladiator to Game of Thrones, then back to Ouarzazate.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Ouarzazate", time: "—", note: "Departure" },
+          { cumulativeKm: 30, legKm: 30, road: "N9 / local road", place: "Aït Benhaddou", time: "40'", note: "UNESCO kasbah, film location tours" },
+          { cumulativeKm: 90, legKm: 60, road: "N10", place: "Ouarzazate (return)", time: "1h", note: "Overnight" },
+        ],
+        pois: [{ name: "Aït Benhaddou", description: "A fortified ksar of packed earth and straw, continuously inhabited for centuries and a favorite filming backdrop for its untouched medieval look." }],
+      },
+      {
+        day: 4,
+        title: "Dades Gorge",
+        totalKm: 150,
+        duration: "≈2h30' riding",
+        narrative: "Through the palm-grove oasis of Skoura and the rose-growing valley of Kelaat M'Gouna to the switchbacks of the Dades Gorge.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Ouarzazate", time: "—", note: "Departure" },
+          { cumulativeKm: 60, legKm: 60, road: "N10", place: "Skoura palm grove", time: "1h", note: "Kasbah-dotted oasis" },
+          { cumulativeKm: 100, legKm: 40, road: "N10", place: "Kelaat M'Gouna", time: "45'", note: "Rose valley" },
+          { cumulativeKm: 150, legKm: 50, road: "N10", place: "Boumalne Dades", time: "45'", note: "Dades Gorge entrance" },
+        ],
+        pois: [{ name: "Dades Gorge", description: "Also called the \"Road of a Thousand Kasbahs,\" a canyon of switchbacks stacked above red rock cliffs — one of the most photogenic roads in Morocco." }],
+      },
+      {
+        day: 5,
+        title: "Todra Gorge",
+        totalKm: 60,
+        duration: "≈2h riding",
+        narrative: "A short but spectacular ride into the narrow limestone walls of the Todra Gorge, with a stop to swim in the river at the canyon floor.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Boumalne Dades", time: "—", note: "Departure" },
+          { cumulativeKm: 30, legKm: 30, road: "N10 / local road", place: "Dades Gorge switchbacks", time: "1h", note: "\"Road of a Thousand Kasbahs\"" },
+          { cumulativeKm: 60, legKm: 30, road: "N10", place: "Tinghir / Todra Gorge", time: "1h", note: "Narrow canyon riding, swim stop" },
+        ],
+        pois: [{ name: "Todra Gorge", description: "Sheer limestone walls up to 300m high, narrowing to just a few meters wide at the canyon floor — a favorite stop for rock climbers as well as riders." }],
+      },
+      {
+        day: 6,
+        title: "Erg Chebbi Desert Camp",
+        totalKm: 380,
+        duration: "≈4h30' riding",
+        narrative: "The long run east to the edge of the Sahara, through the fossil town of Erfoud, ending with a camel transfer to a desert camp under Erg Chebbi's dunes.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Tinghir", time: "—", note: "Departure" },
+          { cumulativeKm: 150, legKm: 150, road: "N10", place: "Erfoud", time: "2h", note: "Fossil town, gateway to the dunes" },
+          { cumulativeKm: 250, legKm: 100, road: "Local road", place: "Merzouga", time: "1h30'", note: "Sahara dunes edge" },
+          { cumulativeKm: 380, legKm: 130, road: "Camel transfer", place: "Erg Chebbi camp", time: "1h", note: "Desert camp under the stars" },
+        ],
+        pois: [{ name: "Erg Chebbi", description: "Dunes up to 150m tall on the edge of the true Sahara — a night here under a sky with almost zero light pollution is the trip's emotional high point." }],
+      },
+      {
+        day: 7,
+        title: "Return via Ourika Valley",
+        totalKm: 380,
+        duration: "≈6h riding",
+        narrative: "A long day back toward Marrakech, with a detour through the Ourika Valley's waterfalls to break up the return.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Erg Chebbi", time: "—", note: "Departure" },
+          { cumulativeKm: 200, legKm: 200, road: "N13", place: "Errachidia", time: "3h", note: "Return route north" },
+          { cumulativeKm: 300, legKm: 100, road: "N13 / R203", place: "Ourika Valley", time: "2h", note: "Waterfall stop" },
+          { cumulativeKm: 380, legKm: 80, road: "R203", place: "Marrakech", time: "1h", note: "Return" },
+        ],
+        pois: [{ name: "Ourika Valley", description: "A green Atlas foothill valley popular with Marrakchis on weekends, with a walkable series of waterfalls a short hike off the road." }],
+      },
+      {
+        day: 8,
+        title: "Marrakech Send-off",
+        totalKm: 80,
+        duration: "≈1h30' riding",
+        narrative: "A final loop through the medina before a farewell breakfast and drop-off.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Marrakech", time: "—", note: "Departure" },
+          { cumulativeKm: 80, legKm: 80, road: "Medina loop", place: "Marrakech", time: "1h30'", note: "Farewell breakfast, drop-off" },
+        ],
+        pois: [{ name: "Marrakech, again", description: "The loop closes back in the medina — one last mint tea before the group scatters to their flights home." }],
+      },
+    ],
   },
   {
     slug: "pacific-coast-highway",
@@ -322,6 +1025,90 @@ export const tours: Tour[] = [
     ],
     bikeOptions: ["Cruiser", "Sport-Touring", "Adventure"],
     startDates: ["2026-09-07", "2027-05-01"],
+    roadbook: [
+      {
+        day: 1,
+        title: "San Francisco Arrival",
+        totalKm: 60,
+        duration: "≈1h10' riding",
+        narrative: "Bike handover and a warm-up ride across the Golden Gate Bridge before the coast highway starts in earnest tomorrow.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "San Francisco", time: "—", note: "Departure" },
+          { cumulativeKm: 30, legKm: 30, road: "US-101", place: "Golden Gate Bridge", time: "30'", note: "Warm-up ride across the bridge" },
+          { cumulativeKm: 60, legKm: 30, road: "CA-1", place: "Pacifica", time: "40'", note: "Coastal overlook" },
+        ],
+        pois: [{ name: "Golden Gate Bridge", description: "The trip's opening shot — 1.7 miles of Art Deco suspension bridge over the bay, usually half-wrapped in fog." }],
+      },
+      {
+        day: 2,
+        title: "Monterey & Carmel",
+        totalKm: 200,
+        duration: "≈3h riding",
+        narrative: "Coastal cruising down through Santa Cruz's boardwalk and Monterey's Cannery Row to an overnight in the storybook village of Carmel-by-the-Sea.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Pacifica", time: "—", note: "Departure" },
+          { cumulativeKm: 90, legKm: 90, road: "CA-1", place: "Santa Cruz", time: "1h30'", note: "Boardwalk & coastal cliffs" },
+          { cumulativeKm: 160, legKm: 70, road: "CA-1", place: "Monterey", time: "1h", note: "Cannery Row" },
+          { cumulativeKm: 200, legKm: 40, road: "CA-1", place: "Carmel-by-the-Sea", time: "30'", note: "Coastal village, overnight" },
+        ],
+        pois: [{ name: "Carmel-by-the-Sea", description: "A walkable, fairy-tale-cottage village with no street addresses by design — locals navigate by landmark, not number." }],
+      },
+      {
+        day: 3,
+        title: "Big Sur",
+        totalKm: 150,
+        duration: "≈3h15' riding",
+        narrative: "The full cliffside stretch of Big Sur, with stops at Bixby Bridge and the waterfall at McWay Falls before the highway's southern edge at San Simeon.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Carmel", time: "—", note: "Departure" },
+          { cumulativeKm: 40, legKm: 40, road: "CA-1", place: "Bixby Bridge", time: "45'", note: "Iconic cantilever bridge photo stop" },
+          { cumulativeKm: 90, legKm: 50, road: "CA-1", place: "McWay Falls", time: "1h", note: "Waterfall onto the beach" },
+          { cumulativeKm: 150, legKm: 60, road: "CA-1", place: "San Simeon", time: "1h30'", note: "Big Sur's southern edge" },
+        ],
+        pois: [{ name: "Bixby Bridge", description: "A 1932 open-spandrel concrete arch bridge, one of the most photographed structures on the entire West Coast." }],
+      },
+      {
+        day: 4,
+        title: "Hearst Castle & San Luis Obispo",
+        totalKm: 150,
+        duration: "≈2h15' riding",
+        narrative: "A slower day: a hilltop tour of Hearst Castle, then inland through San Luis Obispo's wine country to Pismo Beach.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "San Simeon", time: "—", note: "Departure" },
+          { cumulativeKm: 15, legKm: 15, road: "CA-1", place: "Hearst Castle", time: "30'", note: "Hilltop castle tour" },
+          { cumulativeKm: 90, legKm: 75, road: "US-101", place: "San Luis Obispo", time: "1h", note: "Wine country detour" },
+          { cumulativeKm: 150, legKm: 60, road: "US-101", place: "Pismo Beach", time: "45'", note: "Overnight" },
+        ],
+        pois: [{ name: "Hearst Castle", description: "William Randolph Hearst's hilltop estate, built across three decades with imported European antiquities in nearly every room." }],
+      },
+      {
+        day: 5,
+        title: "Santa Barbara to Malibu",
+        totalKm: 200,
+        duration: "≈3h30' riding",
+        narrative: "Santa Barbara's Spanish colonial old town, then open coastline riding through Ventura into Malibu as Los Angeles starts to close in.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Pismo Beach", time: "—", note: "Departure" },
+          { cumulativeKm: 90, legKm: 90, road: "US-101", place: "Santa Barbara", time: "1h30'", note: "Spanish colonial old town" },
+          { cumulativeKm: 160, legKm: 70, road: "US-101 / CA-1", place: "Ventura", time: "1h", note: "Coastal cruising" },
+          { cumulativeKm: 200, legKm: 40, road: "CA-1 / PCH", place: "Malibu", time: "1h", note: "Open coastline into greater LA" },
+        ],
+        pois: [{ name: "Santa Barbara", description: "Rebuilt in a uniform Spanish Colonial Revival style after a 1925 earthquake — red tile roofs and whitewashed walls the whole way through downtown." }],
+      },
+      {
+        day: 6,
+        title: "San Diego Send-off",
+        totalKm: 110,
+        duration: "≈2h30' riding",
+        narrative: "A photo stop at the Santa Monica Pier, then the final coastal miles south to San Diego for a farewell breakfast.",
+        legs: [
+          { cumulativeKm: 0, legKm: 0, road: "—", place: "Malibu", time: "—", note: "Departure" },
+          { cumulativeKm: 60, legKm: 60, road: "CA-1", place: "Santa Monica", time: "1h", note: "Pier photo stop" },
+          { cumulativeKm: 110, legKm: 50, road: "I-5", place: "San Diego", time: "1h30'", note: "Final coastal miles, farewell breakfast" },
+        ],
+        pois: [{ name: "Santa Monica Pier", description: "A classic wooden pier with an amusement park at the end of it — a fitting bookend before the trip's final leg south." }],
+      },
+    ],
   },
   {
     slug: "spain-portugal",

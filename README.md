@@ -24,43 +24,55 @@ Open [http://localhost:3000](http://localhost:3000).
 - `/guide` — Meet MK Rider: bio, credentials, timeline
 - `/about` — Brand story, values, FAQ
 - `/contact` — Contact form
-- `/portal` — Rider Portal lookup (enter a confirmation ID)
-- `/portal/[confirmationId]` — Rider Portal: full trip summary, road book, and prep guide
+- `/portal` — Portal navigation: every tour's road book, open to browse, no login
+- `/portal/[id]` — A tour's full road book (public preview) or a booked rider's personalized trip, depending on what `id` resolves to
 
 ## The Portal
 
-Booking a tour unlocks **the Portal** — a rider-facing area with the full
-day-by-day breakdown of the trip: a kilometer-by-kilometer road book (leg
-distances, road numbers, timings, place notes) and points-of-interest
-write-ups, plus a shared rider prep guide (mountain roads, wildlife,
-cyclists, local signage, gear, and the "ten rules") and packing checklist.
-It's a modernized, browser-native rebuild of the printed road book MK Rider
-used to hand riders on paper — same level of route detail, now searchable,
-linkable, and printable (there's a print/PDF button on the page).
+**The Portal is public.** `/portal` is a navigation grid of all 9 tours —
+anyone can open any tour's full day-by-day road book with no login,
+account, or confirmation ID. It's meant to be a selling point in itself:
+see exactly what a trip looks like before you book it.
+
+Each road book is a kilometer-by-kilometer breakdown (leg distances, road
+numbers, timings, place notes) and points-of-interest write-ups, plus a
+shared rider prep guide (mountain roads, wildlife, cyclists, local
+signage, gear, and the "ten rules") and packing checklist shown on every
+tour. It's a modernized, browser-native rebuild of the printed road book
+MK Rider used to hand riders on paper — same level of route detail, now
+searchable, linkable, and printable (there's a print/PDF button on the
+page).
+
+Booking a tour additionally personalizes the same page: the rider's name,
+confirmation ID, departure date, bike class, and total replace the generic
+preview header. All 9 tours in `src/data/tours.ts` have a full `roadbook`
+array (turn-by-turn legs + POI write-ups) — the Spain & Portugal tour was
+built out first from a real, previously-used road book as the reference
+example, and the rest follow the same format. Add a `roadbook` array to
+any new tour to give it the same full treatment; without one, the Portal
+falls back to that tour's simpler `itinerary` field with a note that the
+full road book ships closer to departure.
 
 How it's wired:
 
+- `GET /api/portal/[id]` (`src/app/api/portal/[id]/route.ts`) is the
+  Portal's backend endpoint. `src/lib/portal.ts#resolvePortal` resolves
+  `id` three ways, in order: (1) a real booking in the in-memory store,
+  (2) the booking-link's fallback query params if the store missed it,
+  (3) `id` itself as a tour slug, which is what makes the public,
+  no-login navigation possible. `src/app/portal/[id]/page.tsx` renders
+  whichever of the three resolves.
 - `POST /api/book` (`src/app/api/book/route.ts`) saves the booking and
   returns a `portalUrl` for the confirmation screen's "Enter Your Portal"
-  button.
-- `GET /api/portal/[confirmationId]` (`src/app/api/portal/[confirmationId]/route.ts`)
-  is the Portal's backend endpoint — given a confirmation ID, it returns the
-  booking plus the full tour/road-book payload. `src/app/portal/[confirmationId]/page.tsx`
-  renders the same data.
-- Only the new flagship tour, `spain-portugal` (`src/data/tours.ts`), has a
-  full `roadbook` (turn-by-turn legs + POI write-ups) — it was built out
-  from a real, previously-used road book as the reference example. Other
-  tours fall back to their simpler `itinerary` field in the Portal view,
-  with a note that the full road book ships closer to departure. Add a
-  `roadbook` array to any tour to give it the same full treatment.
+  button, which lands on the same personalized view.
 - **Storage is in-memory** (`src/lib/bookingStore.ts`) — a stand-in for a
   real database, not persistent across restarts or serverless cold starts.
-  To make the Portal work anyway, the confirmation link carries the
-  booking details as query params (`src/lib/portal.ts` reads the store
-  first and falls back to those params), and `/portal` offers manual
-  lookup by confirmation ID for anyone without their original link. Before
-  taking real bookings, replace `bookingStore.ts` with a real
-  database-backed store.
+  This only affects the *personalized* (post-booking) view — the public
+  road book navigation reads straight from `src/data/tours.ts` and is
+  unaffected. `/portal`'s "Already booked?" box offers manual lookup by
+  confirmation ID as a backup if a rider loses their link. Before taking
+  real bookings, replace `bookingStore.ts` with a real database-backed
+  store.
 
 ## Content & data
 
