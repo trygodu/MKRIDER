@@ -12,6 +12,7 @@ const LINKS = [
   { href: "/guide", label: "The Guide" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
+  { href: "/portal", label: "Portal" },
 ];
 
 export default function Navbar() {

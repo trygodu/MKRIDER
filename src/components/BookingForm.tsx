@@ -13,6 +13,7 @@ type Confirmation = {
   date: string;
   riders: number;
   bikeClass: string;
+  portalUrl: string;
 };
 
 export default function BookingForm({ tour, initialDate }: { tour: Tour; initialDate?: string }) {
@@ -88,8 +89,25 @@ export default function BookingForm({ tour, initialDate }: { tour: Tour; initial
           MK Rider will email you within 24 hours to confirm your bike class, collect a deposit, and send
           gear recommendations.
         </p>
+
+        <div className="mt-8 rounded-md border border-rust-500/30 bg-asphalt-950 p-6">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-rust-400">
+            Unlocked
+          </p>
+          <h3 className="mt-2 font-display text-2xl">Your MK Rider Portal is ready.</h3>
+          <p className="mt-2 text-sm text-paper-200/70">
+            Full kilometer-by-kilometer road book, the rider prep guide, and your packing list —
+            all in one place from here to departure.
+          </p>
+          <Button href={confirmation.portalUrl} className="mt-5">
+            Enter Your Portal →
+          </Button>
+        </div>
+
         <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <Button href="/travel">Browse More Tours</Button>
+          <Button href="/travel" variant="ghost">
+            Browse More Tours
+          </Button>
           <Button href="/" variant="ghost">
             Back Home
           </Button>
